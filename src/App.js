@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import "./App.css";
-import Navbar from "./comp/Navbar";
+import Navbar from "./component/Navbar";
 document.title = "Responsive Header";
 
 function App() {
