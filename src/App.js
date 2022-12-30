@@ -1,22 +1,15 @@
+import { Component, Fragment } from "react";
 import "./App.css";
-import { BiPlusMedical, BiMinus } from "react-icons/bi";
-import { useState } from "react";
+import FindFood from "./comp/FindFood";
 
-function App() {
-
-	const [startNum, setStartNum] = useState(0);
-
-	return (
-		<div className="mainWrap">
-			<button onClick={() => setStartNum(startNum + 1)}>
-				<BiPlusMedical />
-			</button>
-			<div className="number">{startNum}</div>
-			<button onClick={() => setStartNum(startNum - 1)}>
-				<BiMinus />
-			</button>
-		</div>
-	);
+class App extends Component {
+	render() {
+		return (
+			<Fragment>
+				<FindFood />
+			</Fragment>
+		);
+	}
 }
 
 export default App;
