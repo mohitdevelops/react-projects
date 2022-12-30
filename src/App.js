@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BiPlusMedical, BiMinus } from "react-icons/bi";
+import { useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+	const [startNum, setStartNum] = useState(0);
+
+	return (
+		<div className="mainWrap">
+			<button onClick={() => setStartNum(startNum + 1)}>
+				<BiPlusMedical />
+			</button>
+			<div className="number">{startNum}</div>
+			<button onClick={() => setStartNum(startNum - 1)}>
+				<BiMinus />
+			</button>
+		</div>
+	);
 }
 
 export default App;
