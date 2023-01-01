@@ -1,51 +1,14 @@
 *{
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body{
-  font-family: 'Montserrat';
-  font-weight: 400;
-  background-color: #eee;
+  background-color: #222;
+  color: #f3f3f3;
 }
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
-}
-h6{
-  font-weight: 600;
-}
-ul{
-  list-style: none;
-  text-decoration: none;
-}
-.status{
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.status span{
-  display: block;
-  font-size: 2rem;
-  font-weight: 600;
-}
-.closeIcon{
-  cursor: pointer;
-  font-size: 20px;
-}
-
-.main__container{
-  border: solid 1px #eee;
-  border-radius: 5px;
-  padding: 20px;
-  background-color: #fff;
-}
-@media screen and (min-width:768px) {
-  main{  
-    height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+main{
+  max-width: 500px;
+  width: 100%;
+  margin: 80px auto 0;
 }
