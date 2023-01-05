@@ -10,17 +10,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
-<<<<<<< HEAD
     "react-router": "^6.6.1",
     "react-router-dom": "^6.6.1",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
-=======
-    "react-scripts": "^5.0.1",
-    "react-uuid": "^2.0.0",
-    "web-vitals": "^2.1.4",
-    "webfontloader": "^1.6.28"
->>>>>>> a0b358c6f9d8fd23bceabaa66a5ace1e5f7251e8
   },
   "scripts": {
     "start": "react-scripts start",
