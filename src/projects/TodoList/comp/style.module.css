@@ -1,19 +1,21 @@
 .formWrap{
     width: 100%;
-    background-color: rgb(67, 67, 67);
+    background-color: #fff;
     padding: 15px;
     border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.125);
+    border: solid 1px rgb(224, 224, 224);
 }
 .formWrap input{
     width: 100%;
-    color: #fff;
+    color: #222;
     padding: 10px 50px 10px 15px;
     border: solid 1px transparent;
-    background-color: #222;
+    background-color: #eee;
 }
 .formWrap input:focus{
     outline: none;
-    border: solid 1px #5376ff;
+    border: solid 1px rgb(204, 204, 204);
 }
 .formWrap form{
     position: relative;
@@ -42,6 +44,8 @@ ul.list li{
     margin: 8px 0;
     border-radius: 5px;
     position: relative;
+    color: #fff;
+    font-weight: 600;
 }
 ul.list li .check{
     position: absolute;
@@ -50,4 +54,10 @@ ul.list li .check{
     transform: translateY(-50%);
     font-size: 20px;
     cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+    .formWrap button.btn{
+        width: 40px;
+    }
 }

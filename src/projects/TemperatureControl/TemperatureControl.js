@@ -29,20 +29,22 @@ export default function TemperatureControl() {
 	};
 
 	return (
-		<div className={classes.temp__wrap}>
-			<h4>Control the Temperature</h4>
-			<p>(10°C is Cold and 25°C is hot)</p>
-			<div className={`${classes.temp} ${colorChange}`}>
-				<div>{temp}°C</div>
+		<main className={classes.tem_main_wrapper}>
+			<div className={classes.temp__wrap}>
+				<h4>Control the Temperature</h4>
+				<p>(10°C is Cold and 25°C is hot)</p>
+				<div className={`${classes.temp} ${colorChange}`}>
+					<div>{temp}°C</div>
+				</div>
+				<div className={classes.control}>
+					<button onClick={decreaseTemp}>
+						<FaMinus />
+					</button>
+					<button onClick={increaseTemp}>
+						<FaPlus />
+					</button>
+				</div>
 			</div>
-			<div className={classes.control}>
-				<button onClick={decreaseTemp}>
-					<FaMinus />
-				</button>
-				<button onClick={increaseTemp}>
-					<FaPlus />
-				</button>
-			</div>
-		</div>
+		</main>
 	);
 }

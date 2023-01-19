@@ -129,28 +129,30 @@ export default function MarvelQuiz() {
 		}
 	};
 	return (
-		<div className={classes.marvelquiz_wrap}>
-			{score ? (
-				<div className={classes.scoreWrap}>
-					You scored {scored} out of {quizQuestions.length}
-				</div>
-			) : (
-				<div className={classes.questionWrap}>
-					<div className={classes.qBox}>
-						<h3>Q: {quizQuestions[currQuestion].question}?</h3>
+		<main className={classes.marvel_quiz_main_wrapper}>
+			<div className={classes.marvelquiz_wrap}>
+				{score ? (
+					<div className={classes.scoreWrap}>
+						You scored {scored} out of {quizQuestions.length}
 					</div>
-					<div className={classes.aBox}>
-						{quizQuestions[currQuestion].answer.map((el, i) => (
-							<button onClick={() => submitAnswer(el.isCorrect)}>
-								{i + 1}: {el.option}
-							</button>
-						))}
+				) : (
+					<div className={classes.questionWrap}>
+						<div className={classes.qBox}>
+							<h3>Q: {quizQuestions[currQuestion].question}?</h3>
+						</div>
+						<div className={classes.aBox}>
+							{quizQuestions[currQuestion].answer.map((el, i) => (
+								<button onClick={() => submitAnswer(el.isCorrect)}>
+									{i + 1}: {el.option}
+								</button>
+							))}
+						</div>
+						<div className={classes.qNum}>
+							Question: {currQuestion + 1}/{quizQuestions.length}
+						</div>
 					</div>
-					<div className={classes.qNum}>
-						Question: {currQuestion + 1}/{quizQuestions.length}
-					</div>
-				</div>
-			)}
-		</div>
+				)}
+			</div>
+		</main>
 	);
 }

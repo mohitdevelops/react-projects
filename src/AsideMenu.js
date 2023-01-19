@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import classes from "./style.module.css";
-import { BiTimer, BiFilterAlt, BiHomeAlt } from "react-icons/bi";
+import { BiTimer, BiFilterAlt, BiHomeAlt, BiMenu } from "react-icons/bi";
 import {
 	BsThermometerHalf,
 	BsQuestionSquare,
@@ -10,7 +10,7 @@ import {
 
 export default function AsideMenu() {
 	return (
-		<Fragment>
+		<div className={classes.menu_wrapper}>	
 			<ul className={classes.list}>
 				<li>
 					<Link to="/">
@@ -48,6 +48,6 @@ export default function AsideMenu() {
 					</Link>
 				</li>
 			</ul>
-		</Fragment>
+		</div>
 	);
 }
