@@ -9,7 +9,7 @@ h4,p{
     margin-top: 5px;
   }
   main.tem_main_wrapper{
-    height: calc(100vh - 45px);
+    height: calc(100vh - 65px);
     display: flex;
     align-items: center;
     justify-content: center;

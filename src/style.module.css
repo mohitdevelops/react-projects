@@ -34,13 +34,13 @@ aside.side_bar{
   right: 0;
   padding: 0;
   z-index: 99999;
-  height: 45px;
+  height: 65px;
   overflow: hidden;
 }
 .app_container{
   width: 100%;
   margin-left: 0;
-  height: calc(100vh - 45px);
+  height: calc(100vh - 65px);
   padding: 0 15px;
 }
 aside.side_bar h4{
@@ -79,7 +79,7 @@ ul.list li a{
   line-height: 1;
   justify-content: flex-start;
   background-color: #222;
-  padding: 15px 30px;  
+  padding: 25px 30px;  
   width: 100%; 
   color: #fff;
   text-decoration: none;
